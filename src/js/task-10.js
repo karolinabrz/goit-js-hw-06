@@ -38,7 +38,10 @@ $createButton.addEventListener("click", (e) => {
 
 $destroyButton.addEventListener("click", (e) => {
   $inputElement.disabled = false;
+  $inputElement.value = "";
+
   $createButton.disabled = false;
+
   while ($divBox.firstChild) {
     $divBox.firstChild.remove();
   }
